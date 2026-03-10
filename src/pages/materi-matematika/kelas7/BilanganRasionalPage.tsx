@@ -9,7 +9,7 @@ const subtopics = [
   { name: "PECAHAN CAMPURAN DAN PERSEN", path: "/materi-matematika/kelas-7/bilangan-rasional/pecahan-campuran" },
   { name: "PENJUMLAHAN DAN PENGURANGAN PECAHAN", path: "/materi-matematika/kelas-7/bilangan-rasional/penjumlahan-pengurangan-pecahan" },
   { name: "PERKALIAN PECAHAN", path: "/materi-matematika/kelas-7/bilangan-rasional/perkalian-pecahan" },
-  { name: "PEMBAGIAN PECAHAN", path: null },
+  { name: "PEMBAGIAN PECAHAN", path: "/materi-matematika/kelas-7/bilangan-rasional/pembagian-pecahan" },
   { name: "BENTUK DESIMAL", path: null },
   { name: "PENJUMLAHAN BENTUK DESIMAL", path: null },
   { name: "PENGURANGAN BENTUK DESIMAL", path: null },
