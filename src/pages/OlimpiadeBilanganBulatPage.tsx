@@ -24,8 +24,8 @@ const materiSection = {
   sections: [
     {
       heading: "A. Macam-macam Bilangan",
-      content: `1. Bilangan Bulat : $\\{ ..., -3,-2,-1,0,1,2,3,...\\}$
-2. Bilangan Bulat Negatif : $\\{ ..., -3,-2,-1\\}$
+      content: `1. Bilangan Bulat : $\\{..., -3,-2,-1,0,1,2,3,...\\}$
+2. Bilangan Bulat Negatif : $\\{..., -3,-2,-1\\}$
 3. Bilangan Cacah : $\\{0,1,2,3,4,5,...\\}$
 4. Bilangan Asli : $\\{1,2,3,4,5,6,...\\}$
 5. Bilangan Ganjil : $\\{1,3,5,7,9,...\\}$
