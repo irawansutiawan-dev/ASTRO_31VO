@@ -142,6 +142,8 @@ import BilanganRasionalMMK7Page from "./pages/materi-matematika/kelas7/BilanganR
 import ArtiPecahanMMK7Page from "./pages/materi-matematika/kelas7/bilangan-rasional/ArtiPecahanPage";
 import PecahanCampuranMMK7Page from "./pages/materi-matematika/kelas7/bilangan-rasional/PecahanCampuranPage";
 import PenjumlahanPenguranganMMK7Page from "./pages/materi-matematika/kelas7/bilangan-rasional/PenjumlahanPenguranganPage";
+import PerkalianPecahanMMK7Page from "./pages/materi-matematika/kelas7/bilangan-rasional/PerkalianPecahanPage";
+import PembagianPecahanMMK7Page from "./pages/materi-matematika/kelas7/bilangan-rasional/PembagianPecahanPage";
 import AljabarMMK7Page from "./pages/materi-matematika/kelas7/AljabarPage";
 import PLSVPtLSVMMK7Page from "./pages/materi-matematika/kelas7/PLSVPtLSVPage";
 import PerbandinganMMK7Page from "./pages/materi-matematika/kelas7/PerbandinganPage";
@@ -320,6 +322,8 @@ const AppInner = () => {
       <Route path="/materi-matematika/kelas-7/bilangan-rasional/arti-pecahan" element={<ArtiPecahanMMK7Page />} />
       <Route path="/materi-matematika/kelas-7/bilangan-rasional/pecahan-campuran" element={<PecahanCampuranMMK7Page />} />
       <Route path="/materi-matematika/kelas-7/bilangan-rasional/penjumlahan-pengurangan-pecahan" element={<PenjumlahanPenguranganMMK7Page />} />
+      <Route path="/materi-matematika/kelas-7/bilangan-rasional/perkalian-pecahan" element={<PerkalianPecahanMMK7Page />} />
+      <Route path="/materi-matematika/kelas-7/bilangan-rasional/pembagian-pecahan" element={<PembagianPecahanMMK7Page />} />
       <Route path="/materi-matematika/kelas-7/aljabar" element={<AljabarMMK7Page />} />
       <Route path="/materi-matematika/kelas-7/plsv-ptlsv" element={<PLSVPtLSVMMK7Page />} />
       <Route path="/materi-matematika/kelas-7/perbandingan" element={<PerbandinganMMK7Page />} />
