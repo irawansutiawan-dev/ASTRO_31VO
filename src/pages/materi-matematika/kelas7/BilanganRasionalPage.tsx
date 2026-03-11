@@ -13,8 +13,8 @@ const subtopics = [
   { name: "BENTUK DESIMAL", path: "/materi-matematika/kelas-7/bilangan-rasional/bentuk-desimal" },
   { name: "PENJUMLAHAN BENTUK DESIMAL", path: null },
   { name: "PENGURANGAN BENTUK DESIMAL", path: null },
-  { name: "PERKALIAN BENTUK DESIMAL", path: null },
-  { name: "PEMBAGIAN BENTUK DESIMAL", path: null },
+  { name: "PERKALIAN BENTUK DESIMAL", path: "/materi-matematika/kelas-7/bilangan-rasional/perkalian-bentuk-desimal" },
+  { name: "PEMBAGIAN BENTUK DESIMAL", path: "/materi-matematika/kelas-7/bilangan-rasional/pembagian-bentuk-desimal" },
   { name: "PEMBULATAN BENTUK DESIMAL", path: null },
 ];
 
