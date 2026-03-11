@@ -7,7 +7,11 @@ import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 
 const BentukDesimalPage = () => {
-  const [expandedSections, setExpandedSections] = useState<string[]>(["pengertian", "pecahan-ke-desimal", "desimal-ke-pecahan"]);
+  const [expandedSections, setExpandedSections] = useState<string[]>([
+    "pengertian",
+    "pecahan-ke-desimal", 
+    "desimal-ke-pecahan"
+  ]);
 
   const toggleSection = (section: string) => {
     playPopSound();
