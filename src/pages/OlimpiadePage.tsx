@@ -59,7 +59,7 @@ const OlimpiadePage = () => {
 
         <div className="flex flex-col gap-3 animate-slide-up">
           {olimpiadeTopics.map((topik, i) => {
-            const hasContent = topik === "Bilangan Bulat" || topik === "Bilangan Rasional" || topik === "Bilangan Berpangkat" || topik === "Bilangan Irasional" || topik === "KPK dan FPB" || topik === "Modulo - Sisa Pembagian" || topik === "Himpunan" || topik === "Relasi dan Fungsi" || topik === "Perbandingan" || topik === "Aljabar";
+            const hasContent = topik === "Bilangan Bulat" || topik === "Bilangan Rasional" || topik === "Bilangan Berpangkat" || topik === "Bilangan Irasional" || topik === "KPK dan FPB" || topik === "Modulo - Sisa Pembagian" || topik === "Himpunan" || topik === "Relasi dan Fungsi" || topik === "Perbandingan" || topik === "Aljabar" || topik === "Pola Bilangan" || topik === "Sistem Persamaan Linear Dua Variabel" || topik === "Garis dan Sudut" || topik === "Koordinat Cartesius" || topik === "Teorema Pythagoras";
             return (
               <button
                 key={topik}
@@ -85,6 +85,16 @@ const OlimpiadePage = () => {
                     navigate("/olimpiade/perbandingan");
                   } else if (topik === "Aljabar") {
                     navigate("/olimpiade/aljabar");
+                  } else if (topik === "Pola Bilangan") {
+                    navigate("/olimpiade/pola-bilangan");
+                  } else if (topik === "Sistem Persamaan Linear Dua Variabel") {
+                    navigate("/olimpiade/spldv");
+                  } else if (topik === "Garis dan Sudut") {
+                    navigate("/olimpiade/garis-sudut");
+                  } else if (topik === "Koordinat Cartesius") {
+                    navigate("/olimpiade/koordinat-cartesius");
+                  } else if (topik === "Teorema Pythagoras") {
+                    navigate("/olimpiade/teorema-pythagoras");
                   }
                 }}
                 className="group flex items-center gap-4 bg-card/80 backdrop-blur border border-border rounded-xl px-5 py-4
