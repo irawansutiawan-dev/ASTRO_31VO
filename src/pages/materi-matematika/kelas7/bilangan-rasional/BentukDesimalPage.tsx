@@ -81,7 +81,7 @@ const BentukDesimalPage = () => {
                         <tr className="border-b border-border/50">
                           <td className="py-2 px-2 font-bold text-yellow-400">2</td>
                           <td className="py-2 px-2">Ribuan</td>
-                          <td className="py-2 px-2"><InlineMath math="2.000" /></td>
+                          <td className="py-2 px-2"><InlineMath math="2{.}000" /></td>
                         </tr>
                         <tr className="border-b border-border/50">
                           <td className="py-2 px-2 font-bold text-yellow-400">3</td>
@@ -116,7 +116,7 @@ const BentukDesimalPage = () => {
                         <tr>
                           <td className="py-2 px-2 font-bold text-green-400">8</td>
                           <td className="py-2 px-2">Perseribu</td>
-                          <td className="py-2 px-2"><InlineMath math="\frac{8}{1.000}" /></td>
+                          <td className="py-2 px-2"><InlineMath math="\frac{8}{1000}" /></td>
                         </tr>
                       </tbody>
                     </table>
@@ -132,7 +132,7 @@ const BentukDesimalPage = () => {
                 <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-4">
                   <p className="font-body text-sm font-semibold text-purple-300 mb-2">Hubungan Desimal dan Pecahan:</p>
                   <div className="bg-slate-900/50 rounded p-4">
-                    <BlockMath math="2.345,678 = 2.345 + \frac{678}{1.000} = 2.345\frac{678}{1.000}" />
+                    <BlockMath math="2345,678 = 2345 + \frac{678}{1000} = 2345\frac{678}{1000}" />
                   </div>
                   <p className="font-body text-sm text-white/70 mt-3 leading-relaxed">
                     Dari sini terlihat bahwa <strong className="text-purple-300">bilangan desimal</strong> bisa dinyatakan sebagai <strong className="text-purple-300">bilangan campuran (pecahan campuran)</strong>, dan sebaliknya!
@@ -279,7 +279,7 @@ const BentukDesimalPage = () => {
                     </div>
                     <div className="flex items-center justify-center gap-4 flex-wrap">
                       <div className="text-center">
-                        <BlockMath math="\frac{4}{125} = \frac{4 \times 8}{125 \times 8} = \frac{32}{1.000} = 0,032" />
+                        <BlockMath math="\frac{4}{125} = \frac{4 \times 8}{125 \times 8} = \frac{32}{1000} = 0,032" />
                       </div>
                     </div>
                   </div>
@@ -353,16 +353,16 @@ const BentukDesimalPage = () => {
                       <div className="space-y-2 font-body text-sm text-white/80">
                         <p><strong>Langkah 1:</strong> Perhatikan penyebut = 125</p>
                         <p><strong>Langkah 2:</strong> Cari pengali agar penyebut menjadi 1.000</p>
-                        <p className="pl-4 text-cyan-300"><InlineMath math="125 \times 8 = 1.000" /></p>
+                        <p className="pl-4 text-cyan-300"><InlineMath math="125 \times 8 = 1000" /></p>
                         <p><strong>Langkah 3:</strong> Kalikan pembilang dan penyebut dengan 8</p>
                         <div className="bg-slate-900/50 rounded p-3">
-                          <BlockMath math="\frac{4}{125} = \frac{4 \times 8}{125 \times 8} = \frac{32}{1.000}" />
+                          <BlockMath math="\frac{4}{125} = \frac{4 \times 8}{125 \times 8} = \frac{32}{1000}" />
                         </div>
-                        <p><strong>Langkah 4:</strong> Ubah ke bentuk desimal (3 angka di belakang koma karena penyebut 1.000)</p>
+                        <p><strong>Langkah 4:</strong> Ubah ke bentuk desimal (3 angka di belakang koma karena penyebut 1000)</p>
                         <div className="bg-slate-900/50 rounded p-3">
-                          <BlockMath math="\frac{32}{1.000} = 0,032" />
+                          <BlockMath math="\frac{32}{1000} = 0,032" />
                         </div>
-                        <p className="text-primary font-semibold">Jadi, <InlineMath math="\frac{4}{125} = 0,032" /></p>
+                        <p className="text-primary font-semibold">Jadi, <InlineMath math="\frac{4}{125} = 0{,}032" /></p>
                       </div>
                     </div>
                   </div>
@@ -451,7 +451,7 @@ const BentukDesimalPage = () => {
                   <div className="space-y-2 font-body text-sm text-white/80">
                     <p>1 angka di belakang koma = penyebut <strong className="text-cyan-300">10</strong></p>
                     <p>2 angka di belakang koma = penyebut <strong className="text-cyan-300">100</strong></p>
-                    <p>3 angka di belakang koma = penyebut <strong className="text-cyan-300">1.000</strong></p>
+                    <p>3 angka di belakang koma = penyebut <strong className="text-cyan-300">1000</strong></p>
                     <p>dst...</p>
                   </div>
                 </div>
@@ -466,7 +466,7 @@ const BentukDesimalPage = () => {
                       <BlockMath math="0,35 = \frac{35}{100}" />
                     </div>
                     <div className="bg-slate-900/50 rounded p-3 text-center">
-                      <BlockMath math="0,125 = \frac{125}{1.000}" />
+                      <BlockMath math="0,125 = \frac{125}{1000}" />
                     </div>
                     <div className="bg-slate-900/50 rounded p-3 text-center">
                       <BlockMath math="4,67 = 4\frac{67}{100}" />
@@ -562,14 +562,14 @@ const BentukDesimalPage = () => {
                         <p><strong>Langkah 1:</strong> Hitung angka di belakang koma = 6 angka</p>
                         <p><strong>Langkah 2:</strong> Tulis sebagai pecahan dengan penyebut 1.000.000</p>
                         <div className="bg-slate-900/50 rounded p-3">
-                          <BlockMath math="0,000289 = \frac{289}{1.000.000}" />
+                          <BlockMath math="0,000289 = \frac{289}{1000000}" />
                         </div>
                         <p><strong>Langkah 3:</strong> Cari FPB dari 289 dan 1.000.000</p>
                         <p className="pl-4 text-cyan-300"><InlineMath math="289 = 17 \times 17 = 17^2" /></p>
-                        <p className="pl-4 text-cyan-300"><InlineMath math="1.000.000 = 10^6 = 2^6 \times 5^6" /></p>
+                        <p className="pl-4 text-cyan-300"><InlineMath math="1000000 = 10^6 = 2^6 \times 5^6" /></p>
                         <p className="pl-4">FPB = 1 (tidak ada faktor prima yang sama)</p>
                         <p><strong>Langkah 4:</strong> Pecahan sudah dalam bentuk paling sederhana</p>
-                        <p className="text-primary font-semibold">Jadi, <InlineMath math="0,000289 = \frac{289}{1.000.000}" /></p>
+                        <p className="text-primary font-semibold">Jadi, <InlineMath math="0,000289 = \frac{289}{1000000}" /></p>
                       </div>
                     </div>
                   </div>
