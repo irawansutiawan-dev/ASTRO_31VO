@@ -24,7 +24,6 @@ const BentukDesimalPage = () => {
           <p className="text-cyan-100">Memahami bilangan desimal dan konversinya dengan pecahan</p>
         </div>
 
-        {/* Section 1: Pengertian */}
         <div className="bg-slate-800/50 rounded-xl mb-4 overflow-hidden border border-slate-700">
           <button onClick={() => toggleSection(0)} className="w-full flex items-center justify-between p-4 hover:bg-slate-700/50">
             <div className="flex items-center gap-3">
@@ -33,75 +32,43 @@ const BentukDesimalPage = () => {
             </div>
             <ChevronRight className={`transform transition-transform ${activeSection === 0 ? "rotate-90" : ""}`} size={20} />
           </button>
-          
           {activeSection === 0 && (
             <div className="p-4 border-t border-slate-700 space-y-4">
               <div className="bg-cyan-900/30 border-l-4 border-cyan-400 p-4 rounded-r-lg">
                 <p className="font-medium text-cyan-300">Ringkasan Intisari</p>
                 <p className="text-slate-300 mt-1">Bilangan desimal adalah cara penulisan bilangan menggunakan tanda koma untuk memisahkan bagian bulat dan bagian pecahan.</p>
               </div>
-
               <div className="bg-slate-700/50 rounded-lg p-4">
                 <p className="font-medium mb-3">Nilai Tempat dalam Bilangan Desimal:</p>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="border-b border-slate-600">
-                        <th className="py-2 px-2 text-left">Ribuan</th>
-                        <th className="py-2 px-2 text-left">Ratusan</th>
-                        <th className="py-2 px-2 text-left">Puluhan</th>
-                        <th className="py-2 px-2 text-left">Satuan</th>
-                        <th className="py-2 px-2 text-cyan-400">,</th>
-                        <th className="py-2 px-2 text-left">Persepuluhan</th>
-                        <th className="py-2 px-2 text-left">Perseratusan</th>
-                        <th className="py-2 px-2 text-left">Perseribu</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="py-2 px-2">2</td>
-                        <td className="py-2 px-2">3</td>
-                        <td className="py-2 px-2">4</td>
-                        <td className="py-2 px-2">5</td>
-                        <td className="py-2 px-2 text-cyan-400">,</td>
-                        <td className="py-2 px-2">6</td>
-                        <td className="py-2 px-2">7</td>
-                        <td className="py-2 px-2">8</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <p className="text-sm text-slate-300">Contoh: 2345,678</p>
+                <ul className="text-sm mt-2 space-y-1">
+                  <li>2 = ribuan (2000)</li>
+                  <li>3 = ratusan (300)</li>
+                  <li>4 = puluhan (40)</li>
+                  <li>5 = satuan (5)</li>
+                  <li>6 = persepuluhan (6/10)</li>
+                  <li>7 = perseratusan (7/100)</li>
+                  <li>8 = perseribu (8/1000)</li>
+                </ul>
               </div>
-
-              {/* Contoh Soal 1 - Mudah */}
               <div className="bg-green-900/20 border border-green-700 rounded-lg p-4">
                 <span className="bg-green-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Mudah</span>
                 <p className="font-medium mb-2">Tentukan nilai tempat angka 7 pada bilangan 3,478!</p>
                 <div className="bg-slate-800 rounded p-3 mt-2">
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
-                  <p>Pada bilangan 3,478:</p>
-                  <ul className="list-disc list-inside text-sm mt-1 space-y-1">
-                    <li>3 = satuan</li>
-                    <li>4 = persepuluhan (1/10)</li>
-                    <li>7 = perseratusan (1/100)</li>
-                    <li>8 = perseribu (1/1000)</li>
-                  </ul>
-                  <p className="text-primary font-semibold mt-2">Jadi, angka 7 berada di tempat perseratusan.</p>
+                  <p>3 = satuan, 4 = persepuluhan, 7 = perseratusan, 8 = perseribu</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Jadi, angka 7 berada di tempat perseratusan.</p>
                 </div>
               </div>
-
-              {/* Contoh Soal 2 - Sedang */}
               <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4">
                 <span className="bg-yellow-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Sedang</span>
                 <p className="font-medium mb-2">Nyatakan 2345,678 dalam bentuk penjumlahan nilai tempat!</p>
                 <div className="bg-slate-800 rounded p-3 mt-2">
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
                   <BlockMath math="2345,678 = 2000 + 300 + 40 + 5 + 0,6 + 0,07 + 0,008" />
-                  <p className="text-primary font-semibold mt-2">Setiap digit dikalikan dengan nilai tempatnya.</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Setiap digit dikalikan dengan nilai tempatnya.</p>
                 </div>
               </div>
-
-              {/* Contoh Soal 3 - Sulit */}
               <div className="bg-red-900/20 border border-red-700 rounded-lg p-4">
                 <span className="bg-red-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Sulit</span>
                 <p className="font-medium mb-2">Nyatakan 4,67 sebagai pecahan campuran!</p>
@@ -109,14 +76,13 @@ const BentukDesimalPage = () => {
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
                   <p>4,67 memiliki 2 angka di belakang koma (perseratusan)</p>
                   <BlockMath math="4,67 = 4\frac{67}{100}" />
-                  <p className="text-primary font-semibold mt-2">Jadi, 4,67 = 4 67/100</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Jadi, 4,67 sama dengan 4 67/100</p>
                 </div>
               </div>
             </div>
           )}
         </div>
 
-        {/* Section 2: Pecahan ke Desimal */}
         <div className="bg-slate-800/50 rounded-xl mb-4 overflow-hidden border border-slate-700">
           <button onClick={() => toggleSection(1)} className="w-full flex items-center justify-between p-4 hover:bg-slate-700/50">
             <div className="flex items-center gap-3">
@@ -125,60 +91,48 @@ const BentukDesimalPage = () => {
             </div>
             <ChevronRight className={`transform transition-transform ${activeSection === 1 ? "rotate-90" : ""}`} size={20} />
           </button>
-          
           {activeSection === 1 && (
             <div className="p-4 border-t border-slate-700 space-y-4">
               <div className="bg-cyan-900/30 border-l-4 border-cyan-400 p-4 rounded-r-lg">
                 <p className="font-medium text-cyan-300">Ringkasan Intisari</p>
-                <p className="text-slate-300 mt-1">Ada dua cara mengubah pecahan ke desimal: (1) mengubah penyebut menjadi 10, 100, atau 1000, dan (2) membagi pembilang dengan penyebut.</p>
+                <p className="text-slate-300 mt-1">Ada dua cara: (1) mengubah penyebut menjadi 10, 100, atau 1000, dan (2) membagi pembilang dengan penyebut.</p>
               </div>
-
               <div className="bg-amber-900/20 border border-amber-600 rounded-lg p-3">
-                <p className="text-amber-300 font-medium">Tips Penting:</p>
+                <p className="text-amber-300 font-medium">Tips:</p>
                 <p className="text-sm">Jika penyebut sulit diubah menjadi 10/100/1000, gunakan cara pembagian!</p>
               </div>
-
-              {/* Contoh Soal 1 - Mudah */}
               <div className="bg-green-900/20 border border-green-700 rounded-lg p-4">
                 <span className="bg-green-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Mudah</span>
                 <p className="font-medium mb-2">Ubah 3/5 menjadi bentuk desimal!</p>
                 <div className="bg-slate-800 rounded p-3 mt-2">
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
-                  <p>Ubah penyebut 5 menjadi 10 dengan mengalikan 2:</p>
                   <BlockMath math="\frac{3}{5} = \frac{3 \times 2}{5 \times 2} = \frac{6}{10} = 0,6" />
-                  <p className="text-primary font-semibold mt-2">Jadi, 3/5 = 0,6</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Jadi, 3/5 = 0,6</p>
                 </div>
               </div>
-
-              {/* Contoh Soal 2 - Sedang */}
               <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4">
                 <span className="bg-yellow-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Sedang</span>
                 <p className="font-medium mb-2">Ubah 4/125 menjadi bentuk desimal!</p>
                 <div className="bg-slate-800 rounded p-3 mt-2">
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
-                  <p>Ubah penyebut 125 menjadi 1000 dengan mengalikan 8:</p>
                   <BlockMath math="\frac{4}{125} = \frac{4 \times 8}{125 \times 8} = \frac{32}{1000} = 0,032" />
-                  <p className="text-primary font-semibold mt-2">Jadi, 4/125 = 0,032</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Jadi, 4/125 = 0,032</p>
                 </div>
               </div>
-
-              {/* Contoh Soal 3 - Sulit */}
               <div className="bg-red-900/20 border border-red-700 rounded-lg p-4">
                 <span className="bg-red-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Sulit</span>
                 <p className="font-medium mb-2">Ubah 7/11 menjadi desimal (4 tempat desimal)!</p>
                 <div className="bg-slate-800 rounded p-3 mt-2">
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
-                  <p>Penyebut 11 tidak bisa diubah ke 10/100/1000, jadi gunakan pembagian:</p>
+                  <p>Penyebut 11 tidak bisa diubah ke 10/100/1000, gunakan pembagian:</p>
                   <BlockMath math="7 \div 11 = 0,6363..." />
-                  <p className="mt-2">Hasil pembagian menunjukkan pola berulang 63.</p>
-                  <p className="text-primary font-semibold mt-2">Jadi, 7/11 = 0,6363 (desimal berulang)</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Jadi, 7/11 = 0,6363 (desimal berulang)</p>
                 </div>
               </div>
             </div>
           )}
         </div>
 
-        {/* Section 3: Desimal ke Pecahan */}
         <div className="bg-slate-800/50 rounded-xl mb-4 overflow-hidden border border-slate-700">
           <button onClick={() => toggleSection(2)} className="w-full flex items-center justify-between p-4 hover:bg-slate-700/50">
             <div className="flex items-center gap-3">
@@ -187,49 +141,38 @@ const BentukDesimalPage = () => {
             </div>
             <ChevronRight className={`transform transition-transform ${activeSection === 2 ? "rotate-90" : ""}`} size={20} />
           </button>
-          
           {activeSection === 2 && (
             <div className="p-4 border-t border-slate-700 space-y-4">
               <div className="bg-cyan-900/30 border-l-4 border-cyan-400 p-4 rounded-r-lg">
                 <p className="font-medium text-cyan-300">Ringkasan Intisari</p>
-                <p className="text-slate-300 mt-1">Untuk mengubah desimal ke pecahan, hitung jumlah angka di belakang koma untuk menentukan penyebutnya.</p>
+                <p className="text-slate-300 mt-1">Hitung jumlah angka di belakang koma untuk menentukan penyebutnya.</p>
               </div>
-
               <div className="bg-slate-700/50 rounded-lg p-4">
                 <p className="font-medium mb-2">Aturan Penyebut:</p>
                 <ul className="space-y-1 text-sm">
-                  <li>1 angka di belakang koma = penyebut <strong className="text-cyan-300">10</strong></li>
-                  <li>2 angka di belakang koma = penyebut <strong className="text-cyan-300">100</strong></li>
-                  <li>3 angka di belakang koma = penyebut <strong className="text-cyan-300">1000</strong></li>
+                  <li>1 angka = penyebut 10</li>
+                  <li>2 angka = penyebut 100</li>
+                  <li>3 angka = penyebut 1000</li>
                 </ul>
               </div>
-
-              {/* Contoh Soal 1 - Mudah */}
               <div className="bg-green-900/20 border border-green-700 rounded-lg p-4">
                 <span className="bg-green-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Mudah</span>
                 <p className="font-medium mb-2">Ubah 0,6 menjadi pecahan!</p>
                 <div className="bg-slate-800 rounded p-3 mt-2">
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
-                  <p>1 angka di belakang koma, penyebut = 10</p>
                   <BlockMath math="0,6 = \frac{6}{10} = \frac{3}{5}" />
-                  <p className="text-primary font-semibold mt-2">Jadi, 0,6 = 3/5</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Jadi, 0,6 = 3/5</p>
                 </div>
               </div>
-
-              {/* Contoh Soal 2 - Sedang */}
               <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4">
                 <span className="bg-yellow-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Sedang</span>
                 <p className="font-medium mb-2">Ubah 0,125 menjadi pecahan paling sederhana!</p>
                 <div className="bg-slate-800 rounded p-3 mt-2">
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
-                  <p>3 angka di belakang koma, penyebut = 1000</p>
                   <BlockMath math="0,125 = \frac{125}{1000} = \frac{1}{8}" />
-                  <p className="text-sm mt-1">(FPB dari 125 dan 1000 adalah 125)</p>
-                  <p className="text-primary font-semibold mt-2">Jadi, 0,125 = 1/8</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Jadi, 0,125 = 1/8</p>
                 </div>
               </div>
-
-              {/* Contoh Soal 3 - Sulit */}
               <div className="bg-red-900/20 border border-red-700 rounded-lg p-4">
                 <span className="bg-red-600 text-white text-xs px-2 py-1 rounded mb-2 inline-block">Sulit</span>
                 <p className="font-medium mb-2">Ubah 0,000289 menjadi pecahan!</p>
@@ -237,8 +180,7 @@ const BentukDesimalPage = () => {
                   <p className="text-sm text-slate-400 mb-1">Pembahasan:</p>
                   <p>6 angka di belakang koma, penyebut = 1000000</p>
                   <BlockMath math="0,000289 = \frac{289}{1000000}" />
-                  <p className="text-sm mt-1">289 = 17 x 17, tidak memiliki faktor bersama dengan 1000000</p>
-                  <p className="text-primary font-semibold mt-2">Jadi, 0,000289 = 289/1000000</p>
+                  <p className="text-cyan-400 font-semibold mt-2">Jadi, 0,000289 = 289/1000000</p>
                 </div>
               </div>
             </div>
