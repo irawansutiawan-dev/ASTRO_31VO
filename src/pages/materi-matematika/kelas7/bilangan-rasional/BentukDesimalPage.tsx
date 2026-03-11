@@ -7,6 +7,7 @@ import { InlineMath, BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
 
 const BentukDesimalPage = () => {
+  console.log("[v0] BentukDesimalPage rendered");
   const [activeSection, setActiveSection] = useState<number | null>(null);
 
   const toggleSection = (index: number) => {
